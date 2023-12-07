@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Intercambio.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="intercambio.png"
+                HeightRequest="185"
+                Aspect="AspectFit"/>
+
+            <Label
+                Text="Hola!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Bienvenido a tu aplicación para intercambios"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+
+            <Button
+                x:Name="BtnC"
+                Text="Comenzar"
+                Clicked="BtnC_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
